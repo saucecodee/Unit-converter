@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>.:: CEE 343 Assignment</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="wrap">
+                <span>Irregular Converter</span>
+            </div>
+        </header>
+
+        <div class="wrap">
+
+            <!------------------ Height Converter ------------------>
+            <div class="q">
+                <h1 onclick="accord(1)">Height Converter</h1>
+                <div class="main_q" id="q1">
+                    <p>A program that converts <b>Centimeters</b> to <b>Inches</b> and <b>Feet</b> simultaneously</p>
+                    <div class="calc">
+                        <select id="unit">
+                            <option value="cm">Centimeter</option>
+                            <option value="in">Inches</option>
+                            <option value="ft">Feet</option>
+                        </select>
+                        <input id="in1" type="text" placeholder="Enter your value here">
+                        <button onclick="conv1()">Convert</button>
+                    </div>
+                    <div class="ans">
+                        <div class="ans_group"><span class="ans_tit">cm</span><span class="ans_val" id="ans_cm">0.00</span></div>
+                        <div class="ans_group"><span class="ans_tit">in</span><span class="ans_val" id="ans_in">0.00</span></div>
+                        <div class="ans_group"><span class="ans_tit">ft</span><span class="ans_val" id="ans_ft">0.00</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!------------------ Temperature Converter ------------------>
+            <div class="q">
+                <h1 onclick="accord(2)">Temperature Converter</h1>
+                <div class="main_q" id="q2">
+                    <p>A program that converts <b>Centigrade</b> to <b>Fahrenheit</b> and vice-versa.</p>
+                    <div class="calc">
+                        <select id="unit1">
+                            <option value="c">Centigrade</option>
+                            <option value="f">Fahrenheit</option>
+                            <option value="k">Kelvin</option>
+                        </select>
+                        <input id="in2" type="text" placeholder="Enter your value here">
+                        <button onclick="conv2()">Convert</button>
+                    </div>
+                    <div class="ans">
+                        <div class="ans_group"><span class="ans_tit">C</span><span class="ans_val" id="ans_c">0.00</span></div>
+                        <div class="ans_group"><span class="ans_tit">F</span><span class="ans_val" id="ans_f">0.00</span></div>
+                        <div class="ans_group"><span class="ans_tit">K</span><span class="ans_val" id="ans_k">0.00</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!------------------ Calories You Need ------------------>
+            <div class="q">
+                <h1 onclick="accord(3)">Calories You Need</h1>
+                <div class="main_q" id="q3">
+                    <p>A program that accepts a persons <b>Weight</b> and displays the number of <b>Calories</b> the person needs.</p>
+                    <div class="calc">
+                        <input id="in3" type="text" placeholder="Enter weight(ibs) value here">
+                        <button onclick="calc1()">Calculate</button>
+                    </div>
+                    <div class="ans">
+                        This person needs <b><span class="val" id="ans_tc">0.00</span></b> Calories.
+                    </div>
+                </div>
+            </div>
+
+            <!------------------ BMI Calculator ------------------>
+            <div class="q">
+                <h1 onclick="accord(4)">BMI Calculator</h1>
+                <div class="main_q" id="q4">
+                    <p>A program that accepts <b>Weight</b> and <b>Height</b> both integers and output the <b>BMI</b></p>
+                    <div class="calc">
+                        <input id="in4" class="in" type="text" placeholder="Enter weight(kg) value here">
+                        <input id="in5" type="text" placeholder="Enter height(m) value here">
+                        <button onclick="calc2()">Convert</button>
+                    </div>
+                    <div class="ans">
+                        This person's BMI is <b><span class="val" id="ans_bmi">0.00</span></b>
+                        <span id="ans_bmil"></span>
+                    </div>
+                </div>
+            </div>       
+        </div>
+
+        <!------------------ JavaScript ------------------>
+        <script src="script.js"></script>
+        
+    </body>
+</html>

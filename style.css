@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Segoe UI' ,'Trebuchet MS';
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+body{
+    background: #f2f2f2;
+}
+
+button{
+    background: #ffffff;
+    color: #37129b;
+    font-weight: 700;
+    padding:10px 20px;
+    border-radius: 5px;
+    border: 2px solid #37129b;  
+    cursor: pointer;
+}
+
+button:hover{
+    background: linear-gradient(-280deg, #37129b, #6c36da);
+    color: #ffffff;
+    transition: 0.5s all;
+}
+
+input{
+    border: 2px solid #37129b;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 30px;
+}
+
+select{
+    border: 2px solid #37129b;
+    color: #37129b;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(-280deg, #37129b, #6c36da);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 40px;
+    height: 70px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.733);
+    box-sizing: border-box;
+}
+
+.wrap{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.q{
+    background: #ffffff;
+    padding: 10px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.q h1{
+    background: linear-gradient(-49deg, #ff4400,#ff0062);
+    color: #ffffff;
+    font-size: 35px;
+    padding: 10px 60px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.q h1:hover{
+    background: linear-gradient(49deg, #ff4400,#ff0062);
+}
+
+.main_q{
+    background: #f8f8f8;
+    width: 930px;
+    margin: 0 auto;
+    padding:20px;
+    border-radius: 0 0 10px 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: 0.5s all;
+}
+
+#q1, #q2, #q3, #q4{
+    height: 0;
+    padding: 0;
+}
+
+.main_q p{
+    padding:20px;
+    border-bottom: 2px solid #ff0062;
+}
+
+.calc{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.ans{
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px;
+}
+
+.ans_group{
+    background: #ffffff;
+    width: 30%;
+    margin: 0 20px;
+    border: 2px solid #ff0062;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.ans_tit{
+    float: left;
+    background: #ff0062;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    width: 11.6%;
+    padding: 10px;
+}
+
+.ans_val{
+    float: left;
+    background: #ffffff;
+    text-align: center;
+    height:50%;
+    width: 71%;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 0 7px 7px 0;
+}
+
+.val{
+    padding: 0px 10px;
+    color: #ff0062;
+}
+
+.in{
+    margin: 0;
+}
+
+#ans_bmil b{
+    color:#ff4400;
+}
